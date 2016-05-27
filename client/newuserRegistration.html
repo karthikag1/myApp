@@ -1,0 +1,47 @@
+
+<div ng-controller="newuserRegistrationCtrl">
+<h3>User Registration</h3>
+	<form ng-submit="register(formdata)" name="registrationForm">
+		<div>
+			<font color="black">
+				<align="center">Name </align>
+			</font>
+			<input type="text" ng-model="formdata.name" name="name" required><br>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">
+				<align="center">Address </align>
+			</font>
+			<input type="text" ng-model="formdata.address" name="address" required><br>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">
+				<align="center">Email </align>
+			</font>
+			<input type="email" ng-model="formdata.email" name="email" required><br>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">
+				<align="center">Username </align>
+			</font>
+			<input type="text" ng-model="formdata.username" name="username" required><br>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">Password </font>
+			<input type="password" ng-model="formdata.password" name="password" required><br>
+			<br>
+		</div>
+		<br>
+		<align="right">
+			<input type="submit" value="Register" width="500px">
+		</align>
+	</form>
+</div>

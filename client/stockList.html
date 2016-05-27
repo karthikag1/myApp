@@ -1,0 +1,32 @@
+<div id="wrapper">
+	<div class="nav left" ng-include src="'navigation.html'"></div>
+	<div class="content left">
+	<br>
+		<button name="addstock" type="submit" ng-click="stockAdd()">Add Stock</button>
+		<br><br>
+		<table border="1" width="100%" cellpadding="0" cellspacing="0">
+		<col width="10">
+			<thead>
+				<tr>
+					<th>Product</th>
+					<th>Stock</th>
+					<th>StockEnteredon</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="stock in data">
+					<td>{{stock.product_id}}</td>
+					<td>{{stock.stock}}</td>
+					<td>{{stock.stockEnteredon}}</td>
+					<td><button name="deleteUser" type="submit" ng-click="delete(stock._id)">Delete</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+</div>
+
+
+
+
+

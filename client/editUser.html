@@ -1,0 +1,38 @@
+<div>
+	<form ng-submit="editUser(data)" name="edituserForm">
+		<div>
+			<font color="black">
+				<align="center">Name </align>
+			</font>
+			<input type="text" ng-model="data.name" name="name" required><br>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">
+				<align="center">Email </align>
+			</font>
+			<input type="email" ng-model="data.email" name="email" required><br>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">
+				<align="center">Username </align>
+			</font>
+			<input type="text" ng-model="data.username" name="username" required><br>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">Admin</font>
+			<input type="text" ng-model="data.is_admin" name="admin" required><br>
+			<br>
+		</div>
+		<br>
+		<align="right">
+			<input type="submit" value="Edit" width="500px">
+		</align>
+	</form>
+
+</div>

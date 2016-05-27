@@ -1,0 +1,35 @@
+<html ng-app="myApp">
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="script.js"></script>
+      <script type="text/javascript" src="homeCtrl.js"></script>
+      <script type="text/javascript" src="myAppServices/myAppService.js"></script>
+      <script type="text/javascript" src="login.js"></script>
+      <script type="text/javascript" src="newuserRegistration.js"></script>
+      <script type="text/javascript" src="productListing.js"></script>
+      <script type="text/javascript" src="adminHome.js"></script>
+      <script type="text/javascript" src="userList.js"></script>
+      <script type="text/javascript" src="editUser.js"></script>
+      <script type="text/javascript" src="adminProductList.js"></script>
+      <script type="text/javascript" src="editProduct.js"></script>
+      <script type="text/javascript" src="stock.js"></script>
+      <script type="text/javascript" src="stockList.js"></script>
+      <script src="./bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+      <script type="text/javascript" src="logout.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+        <!-- HEADER AND NAVBAR -->
+        <header>
+        </header>
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div id="main">
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+          <div ng-view></div>
+        </div>
+    </body>
+    </html>

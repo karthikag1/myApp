@@ -1,0 +1,30 @@
+<div id="wrapper">
+	<div class="nav left" ng-include src="'navigation.html'"></div>
+	<div class="content left">
+		<form ng-submit="addStock(formdata)" name="registrationForm">
+		<div>
+			<font color="black">
+				<align="center">Product </align>
+			</font>
+			<select name="productList" ng-model="formdata.product_id">
+                <option ng-repeat="product in data" value="{{product._id}}" >
+                    {{product.name}}
+                </option>  
+            </select>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">
+				<align="center">stock </align>
+			</font>
+			<input type="text" ng-model="formdata.stock" name="stock" required><br>
+			<br>
+		</div>
+		<br>
+		<align="right">
+			<input type="submit" value="Add Stock" width="500px">
+		</align>
+	</form>
+	</div>	
+</div>

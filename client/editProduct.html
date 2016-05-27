@@ -1,0 +1,44 @@
+<div>
+	<form ng-submit="editUser(data)" name="edituserForm">
+		<div>
+			<font color="black">
+				<align="center">Name </align>
+			</font>
+			<input type="text" ng-model="data.name" name="name" required><br>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">
+				<align="center">Price </align>
+			</font>
+			<input type="number" ng-model="data.price" name="price" required><br>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">
+				<align="center">Description </align>
+			</font>
+			<input type="text" ng-model="data.description" name="description" required><br>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">Category</font>
+			<input type="text" ng-model="data.category" name="category" required><br>
+			<br>
+		</div>
+		<br>
+		<div>
+			<font color="black">Featured Product</font>
+			<input type="text" ng-model="data.featured_product" name="featured Product" required><br>
+			<br>
+		</div>
+		<br>
+		<align="right">
+			<input type="submit" value="Edit" width="500px">
+		</align>
+	</form>
+
+</div>

@@ -1,0 +1,29 @@
+<div id="wrapper">
+	<div class="nav left" ng-include src="'navigation.html'"></div>
+	<div class="content left">
+		<table border="1" width="100%" cellpadding="0" cellspacing="0">
+			<col width="10">
+			<thead>
+				<tr>
+					<th>Product Name</th>
+					<th>Price</th>
+					<th>Description</th>
+					<th>Image</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="product in data">
+					<td>{{product.name}}</td>
+					<td>{{product.price}}</td>
+					<td>{{product.description}}</td>
+					<td><img ng-src="{{product.image}}"></td>
+					<td>
+						<button name="editUser" type="submit" ng-click="editProduct(product._id)">Edit</button>
+						<button name="deleteUser" type="submit" ng-click="deleteProduct(product._id)">Delete</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+</div>
